@@ -1,0 +1,45 @@
+# Large binaries and OS images
+*.iso
+Fedora-*
+/iron-man-hammer-hit-sound.mp3
+
+# Local working logs & drafts
+Agent chats/
+*.log
+vision-v0.txt
+foundationalBlueprints.md
+
+# Internal binary builds
+bin/
+
+# Dependencies
+node_modules/
+website/node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+website/.next/
+out/
+website/out/
+build/
+dist/
+
+# TypeScript cache
+*.tsbuildinfo
+website/*.tsbuildinfo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+*.pem
+
+# Environment variables
+.env*
+!.env.example
+
+# Tooling metadata
+AGENTS.md
+website/AGENTS.md
+
