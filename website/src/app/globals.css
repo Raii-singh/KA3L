@@ -1,0 +1,273 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   KA3L DESIGN TOKENS
+   NO BLUE. NO PURPLE. EVER.
+   Palette: graphite · steel · muted red · cold white
+───────────────────────────────────────────── */
+
+:root {
+  /* Backgrounds */
+  --bg-deep:    #0E1115;
+  --bg-mid:     #161B22;
+  --bg-surface: #1E252E;
+  --bg-raised:  #252D38;
+
+  /* Text */
+  --text-primary:   #E8E9EA;
+  --text-secondary: #9BA3AE;
+  --text-muted:     #5C6470;
+  --text-dim:       #3A4149;
+
+  /* Accent — restrained red */
+  --accent:       #C0392B;
+  --accent-dim:   #8B2520;
+  --accent-glow:  rgba(192, 57, 43, 0.15);
+
+  /* Borders / structure */
+  --border:       #252D38;
+  --border-light: #2E3740;
+  --grid-line:    rgba(92, 100, 112, 0.2);
+
+  /* Steel tones */
+  --steel-light: #AEB7C2;
+  --steel-mid:   #6B7684;
+  --steel-dark:  #3A4149;
+
+  /* Scroll snap */
+  --section-height: 100svh;
+}
+
+/* ─── Ultra Glassmorphism Tokens ─── */
+.glass-panel {
+  background: rgba(18, 22, 28, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+}
+
+.glass-card {
+  background: rgba(22, 27, 34, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: rgba(28, 34, 44, 0.65);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.glass-button-primary {
+  background: rgba(192, 57, 43, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 59, 48, 0.4);
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.glass-button-primary:hover {
+  background: rgba(214, 62, 48, 0.95);
+  box-shadow: 0 6px 25px rgba(192, 57, 43, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ─── Hero Split Grid ─── */
+.ka3l-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .ka3l-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    overflow-y: auto;
+  }
+}
+
+/* ─── Link hover classes ─── */
+.ka3l-footer-link:hover,
+.ka3l-nav-link:hover {
+  color: var(--text-primary) !important;
+}
+
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ─── Scroll Snap Container ─── */
+.snap-container {
+  height: 100svh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100svh;
+}
+
+/* ─── Typography Scale ─── */
+.text-display {
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.text-heading {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.text-subheading {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.text-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.text-code {
+  font-family: var(--font-geist-mono), 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  color: var(--steel-light);
+}
+
+/* ─── Component primitives ─── */
+.ka3l-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+.ka3l-card-hover {
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.ka3l-card-hover:hover {
+  border-color: var(--accent-dim);
+  background: var(--bg-raised);
+}
+
+.accent-line {
+  display: inline-block;
+  width: 2rem;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ─── Noise texture overlay ─── */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* ─── Capability tag ─── */
+.cap-tag {
+  display: inline-block;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.75rem;
+  color: var(--steel-light);
+  background: var(--bg-mid);
+  border: 1px solid var(--border-light);
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--steel-dark);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--steel-mid);
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: var(--accent-glow);
+  color: var(--text-primary);
+}
+
+/* ─── Utility: no-blue enforcement comment ─── */
+/* DESIGN RULE: #0000xx #1e90ff #3b82f6 #60a5fa ANY blue shade — BANNED */
+/* DESIGN RULE: #800080 #6B21A8 #7c3aed #a855f7 ANY purple shade — BANNED */
+
+/* dev: style pass 005 */
