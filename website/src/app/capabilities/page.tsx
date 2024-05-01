@@ -162,4 +162,4 @@ export default function CapabilitiesPage() {
   );
 }
 
-// dev: revision 020 verified
+// dev: revision 024 verified
