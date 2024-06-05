@@ -158,4 +158,4 @@ export default function CapabilityConsole() {
   );
 }
 
-// dev: revision 059 verified
+// dev: revision 060 verified
