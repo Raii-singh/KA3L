@@ -456,5 +456,3 @@ export default function Scene3D({ scrollProgress, activeMode = 'collective' }: S
   );
 }
 
-
-// dev: revision 069 verified

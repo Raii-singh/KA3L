@@ -161,5 +161,3 @@ export default function CapabilitiesPage() {
     </div>
   );
 }
-
-// dev: revision 024 verified

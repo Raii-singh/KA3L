@@ -9,5 +9,3 @@ export default function FooterWrapper() {
   return <Footer />;
 }
 
-
-// dev: revision 011 verified

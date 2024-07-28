@@ -224,5 +224,3 @@ export default function YogiBootVisualizer() {
     </div>
   );
 }
-
-// dev: revision 109 verified

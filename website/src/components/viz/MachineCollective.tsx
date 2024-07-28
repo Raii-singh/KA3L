@@ -451,5 +451,3 @@ export default function MachineCollective() {
   );
 }
 
-
-// dev: revision 071 verified

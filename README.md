@@ -39,5 +39,3 @@ Visit [http://localhost:3000](http://localhost:3000) to explore the interactive 
 ## License
 
 Apache-2.0
-
-<!-- rev: 014 -->

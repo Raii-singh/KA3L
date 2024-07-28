@@ -157,5 +157,3 @@ export default function CapabilityConsole() {
     </div>
   );
 }
-
-// dev: revision 112 verified

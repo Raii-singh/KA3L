@@ -21,5 +21,3 @@ export interface NavItem {
   external?: boolean;
 }
 
-
-// dev: revision 021 verified

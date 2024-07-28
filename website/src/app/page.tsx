@@ -873,5 +873,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-// dev: revision 115 verified

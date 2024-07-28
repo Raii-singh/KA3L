@@ -458,5 +458,3 @@ export default function HomeEcosystem3D() {
   );
 }
 
-
-// dev: revision 067 verified

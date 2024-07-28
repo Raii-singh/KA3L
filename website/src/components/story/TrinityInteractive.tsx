@@ -221,5 +221,3 @@ export default function TrinityInteractive() {
     </div>
   );
 }
-
-// dev: revision 110 verified

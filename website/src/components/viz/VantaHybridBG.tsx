@@ -297,5 +297,3 @@ export default function VantaHybridBG({ currentPage }: VantaHybridBGProps) {
     />
   );
 }
-
-// dev: revision 068 verified

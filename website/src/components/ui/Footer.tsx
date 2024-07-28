@@ -125,5 +125,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-// dev: revision 011 verified

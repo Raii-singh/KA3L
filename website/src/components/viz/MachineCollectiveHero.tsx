@@ -53,5 +53,3 @@ export default function MachineCollectiveHero() {
   return <DynamicMachineCollective />;
 }
 
-
-// dev: revision 077 verified

@@ -354,5 +354,3 @@ $ ka3ld --config /etc/ka3l/ka3ld.conf --lab-mode
   );
 }
 
-
-// dev: revision 027 verified

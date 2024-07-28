@@ -56,5 +56,3 @@ export default function TrueGlassWindow({
   );
 }
 
-
-// dev: revision 107 verified

@@ -260,5 +260,3 @@ export const CURRENT_STATUS = {
     'Cloud scheduling',
   ],
 };
-
-// dev: revision 022 verified

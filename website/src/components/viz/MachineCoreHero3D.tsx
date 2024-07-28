@@ -598,5 +598,3 @@ export default function MachineCoreHero3D() {
   );
 }
 
-
-// dev: revision 070 verified

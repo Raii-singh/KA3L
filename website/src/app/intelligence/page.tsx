@@ -176,5 +176,3 @@ export default function IntelligencePage() {
     </div>
   );
 }
-
-// dev: revision 026 verified

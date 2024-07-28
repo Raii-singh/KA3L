@@ -138,5 +138,3 @@ export default function Nav() {
     </nav>
   );
 }
-
-// dev: revision 113 verified

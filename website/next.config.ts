@@ -5,5 +5,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-// dev: revision 004 verified

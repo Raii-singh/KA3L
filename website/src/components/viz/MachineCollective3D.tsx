@@ -622,5 +622,3 @@ export default function MachineCollective3D() {
     </div>
   );
 }
-
-// dev: revision 084 verified

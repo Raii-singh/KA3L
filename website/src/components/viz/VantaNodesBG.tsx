@@ -313,5 +313,3 @@ export default function VantaNodesBG({ currentPage }: VantaNodesBGProps) {
   );
 }
 
-
-// dev: revision 091 verified

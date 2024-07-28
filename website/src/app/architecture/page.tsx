@@ -333,5 +333,3 @@ export default function ArchitecturePage() {
   );
 }
 
-
-// dev: revision 023 verified
